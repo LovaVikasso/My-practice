@@ -116,3 +116,8 @@ function basicOp(operation, value1, value2) {
 function noSpace(x) {
   return x.split(' ').join('');
 } // удалить пробелы из строки
+
+
+function stringToArray(string){
+return string.split(' ')
+} //разделить строку на отдельные слова и представить в виде нового массива
