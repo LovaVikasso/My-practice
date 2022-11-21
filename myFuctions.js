@@ -121,3 +121,13 @@ function noSpace(x) {
 function stringToArray(string){
 return string.split(' ')
 } //разделить строку на отдельные слова и представить в виде нового массива
+
+
+function createPhoneNumber(numbers){
+  let format = "(xxx) xxx-xxxx";
+  for(let i = 0; i < numbers.length; i++)
+  {
+    format = format.replace('x', numbers[i]);
+  }
+  return format;
+} // массив с числами преобразуем в формат записи телефонного номера
