@@ -29,4 +29,7 @@ myName.slice(1,2) //i с начала от первой до второй бук
 myName.slice(-2,-1)//k то же самое с конца
 myName.slice(1)//ika
 
+let city = " Montreal  "
+city.trim() // "Montreal"
+
                 
