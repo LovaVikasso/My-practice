@@ -131,3 +131,21 @@ function createPhoneNumber(numbers){
   }
   return format;
 } // массив с числами преобразуем в формат записи телефонного номера
+
+
+function accum(s) {
+  var letters = s.split(''), words = [];
+
+  for(var i = 0; i < letters.length; i++) {
+    words.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
+  }
+
+  return words.join('-');
+} /*accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"*/
+
+function getMiddle(s)
+{
+  return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
+}// вернуть среднюю букву в строке
