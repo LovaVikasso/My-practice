@@ -155,3 +155,8 @@ function findShort(s){
   let arr = s.split(" ").sort((a, b) => a.length - b.length);
   return arr[0].length
 }// в строке разных слов найти самое короткое и вернуть его длину
+
+
+function filter_list(l) {
+  return l.filter( str => typeof str != 'string');
+}// из строки с словами и числами вернуть только числа
