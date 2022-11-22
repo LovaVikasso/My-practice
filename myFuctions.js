@@ -149,3 +149,9 @@ function getMiddle(s)
 {
   return s.substr(Math.ceil(s.length / 2 - 1), s.length % 2 === 0 ? 2 : 1);
 }// вернуть среднюю букву в строке
+
+
+function findShort(s){
+  let arr = s.split(" ").sort((a, b) => a.length - b.length);
+  return arr[0].length
+}// в строке разных слов найти самое короткое и вернуть его длину
