@@ -32,4 +32,7 @@ myName.slice(1)//ika
 let city = " Montreal  "
 city.trim() // "Montreal"
 
+let city = "Montreal";
+city = city.replace("e", "é"); // "Montréal"
+
                 
