@@ -168,3 +168,9 @@ class SmallestIntegerFinder {
     
   }
 } // вернуть из массива числе самое маленькое
+
+
+const stringToNumber = function(str){
+  // put your code here
+  return parseInt(str);
+} // преобразовать строку в число
