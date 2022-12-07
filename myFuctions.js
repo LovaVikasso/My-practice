@@ -160,3 +160,11 @@ function findShort(s){
 function filter_list(l) {
   return l.filter( str => typeof str != 'string');
 }// из строки с словами и числами вернуть только числа
+
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args)
+    
+  }
+} // вернуть из массива числе самое маленькое
