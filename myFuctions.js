@@ -174,3 +174,8 @@ const stringToNumber = function(str){
   // put your code here
   return parseInt(str);
 } // преобразовать строку в число
+
+
+function squareDigits(num){
+  return Number(('' + num).split('').map(function (val) { return val * val;}).join(''));
+} //разделает число и возводит в квадрат его, а результату объединяет в новое число, например 123=>149
