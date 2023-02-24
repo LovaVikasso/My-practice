@@ -184,3 +184,9 @@ function squareDigits(num){
 function solution(str){
    return str.split("").reverse().join("");
 }//возвращает строку в обратном порядке
+
+
+let number = 0;
+function plus() {
+  return number++
+} //каждый раз когда вызывается функция передаем число на 1 больше, начиная с нуля
