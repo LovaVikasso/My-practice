@@ -35,4 +35,11 @@ city.trim() // "Montreal"
 let city = "Montreal";
 city = city.replace("e", "é"); // "Montréal"
 
+
+//найсти самую короткую строку в массиве
+function findShort(s){
+  let arr = s.split(" ").sort((a, b) => a.length - b.length);
+  return arr[0].length
+}
+
                 
