@@ -190,3 +190,11 @@ let number = 0;
 function plus() {
   return number++
 } //каждый раз когда вызывается функция передаем число на 1 больше, начиная с нуля
+
+function squareSum(numbers){
+  let res = 0
+for (let i = 0; i <numbers.length; i++) {
+    res += numbers[i] **2
+}
+  return res
+}//возводит в квадрат каждый элемент и возвращает сумму результата
