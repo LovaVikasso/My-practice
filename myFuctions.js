@@ -198,3 +198,12 @@ for (let i = 0; i <numbers.length; i++) {
 }
   return res
 }//возводит в квадрат каждый элемент и возвращает сумму результата
+
+
+var summation = function (num) {
+  let sum = 0
+    for(let i = 0; i <= num; i++) {
+        sum += i
+    }
+    return sum
+}// возвращает сумму всех числе, что были порядковыми до нудного числа, н: fun(5) = 1+2+3+4+5 = 15
