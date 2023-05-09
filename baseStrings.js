@@ -42,4 +42,6 @@ function findShort(s){
   return arr[0].length
 }
 
-                
+ function abbrevName(name){
+return name.split(" ").map((part) => part[0].toUpperCase()).join(".")
+}   //из имени и фамилии возвращает инициалы с точкой между ними             
