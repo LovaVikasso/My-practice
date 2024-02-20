@@ -207,3 +207,10 @@ var summation = function (num) {
     }
     return sum
 }// возвращает сумму всех числе, что были порядковыми до нудного числа, н: fun(5) = 1+2+3+4+5 = 15
+
+//Jack really likes his number five: the trick here is that you have to multiply each number by 5 raised to the number of digits of each numbers, so, for example:
+function multiply(number){
+  const digits = Math.abs(number).toString().length;
+  const result = number * Math.pow(5, digits);
+  return result;
+}
